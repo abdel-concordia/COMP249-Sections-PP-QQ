@@ -5,22 +5,19 @@ public class Driver extends Object {
     public static void main(String[] args) {
 
         Address ad = new Address(1234, "Ste-Catherine", "H3", "Montreal");
+        Student s1 = new Student("John", 20, ad, "CS", 3.7);
 
-        Person p1 = new Person("John", 20, ad);
+        System.out.println(s1.f());
 
-        Person p2 = new Person("Jane", 19, new Address(5678, "Guy", "H3", "Montreal"));
-
-        Person p3 = new Person("Jane", 19, 5678, "Guy", "H3", "Montreal");
-
-        Person p4 = new Person(p1);
-
-        Address ad2 = p1.getAddress();
-
-        System.out.println(ad2);
-
-        ad2.setCityName("Sherbrooke");
-        System.out.println(p1.getAddress().getCityName());
-
+        //System.out.println(s1.getProgramOfStudy());
+        //Person p1 = new Person("John", 20, ad);
+        //Person p2 = new Person("Jane", 19, new Address(5678, "Guy", "H3", "Montreal"));
+        //Person p3 = new Person("Jane", 19, 5678, "Guy", "H3", "Montreal");
+        //Person p4 = new Person(p1);
+        //Address ad2 = p1.getAddress();
+        //System.out.println(ad2);
+        //ad2.setCityName("Sherbrooke");
+        //System.out.println(p1.getAddress().getCityName());
         //p4.setName("New Name");
         //System.out.println(p1.getName());
         //System.out.println(p4.getName());
