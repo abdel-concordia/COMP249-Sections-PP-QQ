@@ -7,8 +7,6 @@ public class Driver extends Object {
         Address ad = new Address(1234, "Ste-Catherine", "H3", "Montreal");
         Student s1 = new Student("John", 20, ad, "CS", 3.7);
 
-        System.out.println(s1.f());
-
         //System.out.println(s1.getProgramOfStudy());
         //Person p1 = new Person("John", 20, ad);
         //Person p2 = new Person("Jane", 19, new Address(5678, "Guy", "H3", "Montreal"));
@@ -33,7 +31,7 @@ public class Driver extends Object {
         //g(a);
         //System.out.println("After calling g: " + a);
     }
-
+    /*
     public static void g(int x) {
         x = x + 5;
         System.out.println("In method g: " + x);
@@ -43,5 +41,5 @@ public class Driver extends Object {
         //p.setName("New name");
         //p = new Person("New name", 60, "Laval");
     }
-
+     */
 }
