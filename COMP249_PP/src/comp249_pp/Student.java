@@ -38,8 +38,8 @@ public class Student extends Person {
     }
 
     @Override
-    public void g() {
-        super.g();
+    public void f() {
+        System.out.println("From Student class.");
     }
 
     @Override

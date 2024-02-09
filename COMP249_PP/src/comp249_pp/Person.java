@@ -81,12 +81,8 @@ public class Person {
         //}
     }
 
-    private void f() {
+    public void f() {
         System.out.println("From Person class.");
-    }
-
-    public void g() {
-        f();
     }
 
     @Override

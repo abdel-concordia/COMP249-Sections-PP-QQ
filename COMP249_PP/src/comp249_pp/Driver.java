@@ -7,10 +7,23 @@ public class Driver extends Object {
         Address ad1 = new Address(1234, "Ste-Catherine", "H3", "Montreal");
         Address ad2 = new Address(1234, "Ste-Catherine", "H3", "Montreal");
 
-        Person p1 = new Person("John", 20, ad1);
-        Person p2 = new Person("John", 20, ad2);
+        Person s1 = new Student("John", 20, ad1, "CS", 3.7);
+        Student s2 = new Student("John", 20, ad2, "CS", 3.7);
 
-        System.out.println(p1.equals(p2));
+        Person p1 = new Person("John", 20, ad1);
+
+        Person[] myStudents = new Student[5];
+
+        myStudents[0] = s1;
+        myStudents[1] = p1;
+
+        s1.f();
+
+        s2.f();
+
+        //Person p1 = new Person("John", 20, ad1);
+        //Person p2 = new Person("John", 20, ad2);
+        //System.out.println(p1.equals(p2));
         /*
         Student s1 = new Student("John", 20, ad1, "CS", 3.7);
         Student s2 = new Student("John", 20, ad2, "CS", 3.7);
