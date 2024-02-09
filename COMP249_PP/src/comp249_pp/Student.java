@@ -42,4 +42,26 @@ public class Student extends Person {
         super.g();
     }
 
+    @Override
+    public boolean equals(Object otherObject) {
+        // Check if the parameter is not null
+        if (otherObject == null) {
+            return false;
+        }
+        // Check if the parameter is of the same type (Student)
+        // PLEASE DO NOT USE instanceof
+        if (otherObject.getClass() != this.getClass()) {
+            return false;
+        }
+
+        // Everything looks good, please compare
+        Student otherStudent = (Student) otherObject;
+
+        if (this.gpa == otherStudent.gpa) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

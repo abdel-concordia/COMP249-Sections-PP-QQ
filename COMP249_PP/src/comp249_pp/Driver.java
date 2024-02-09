@@ -4,13 +4,26 @@ public class Driver extends Object {
 
     public static void main(String[] args) {
 
-        Address ad = new Address(1234, "Ste-Catherine", "H3", "Montreal");
-        Student s1 = new Student("John", 20, ad, "CS", 3.7);
+        Address ad1 = new Address(1234, "Ste-Catherine", "H3", "Montreal");
+        Address ad2 = new Address(1234, "Ste-Catherine", "H3", "Montreal");
 
-        System.out.println(s1 instanceof Student);
-        System.out.println(s1 instanceof Person);
-        System.out.println(s1 instanceof Object);
+        Person p1 = new Person("John", 20, ad1);
+        Person p2 = new Person("John", 20, ad2);
 
+        System.out.println(p1.equals(p2));
+        /*
+        Student s1 = new Student("John", 20, ad1, "CS", 3.7);
+        Student s2 = new Student("John", 20, ad2, "CS", 3.7);
+
+        if (s1.equals(s2)) {
+            System.out.println("Equal");
+        } else {
+            System.out.println("Not equal");
+        }
+         */
+//        System.out.println(s1 instanceof Student);
+//        System.out.println(s1 instanceof Person);
+//        System.out.println(s1 instanceof Object);
         // getClass()
         //System.out.println(s1.getProgramOfStudy());
         //Person p1 = new Person("John", 20, ad);

@@ -61,4 +61,24 @@ public class Address {
         return this.cityName;
     }
     // toString
+
+    // equals
+    @Override
+    public boolean equals(Object otherObject) {
+        if (otherObject == null) {
+            return false;
+        }
+
+        if (getClass() != otherObject.getClass()) {
+            return false;
+        }
+
+        Address otherAddress = (Address) otherObject;
+
+        if (streetNumber == otherAddress.streetNumber && zipCode.equals(otherAddress.zipCode)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

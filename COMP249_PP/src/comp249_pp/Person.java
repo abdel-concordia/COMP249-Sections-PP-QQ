@@ -89,4 +89,21 @@ public class Person {
         f();
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Person otherPerson = (Person) obj;
+
+        if (address.equals(otherPerson.address)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
