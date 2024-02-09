@@ -7,6 +7,11 @@ public class Driver extends Object {
         Address ad = new Address(1234, "Ste-Catherine", "H3", "Montreal");
         Student s1 = new Student("John", 20, ad, "CS", 3.7);
 
+        System.out.println(s1 instanceof Student);
+        System.out.println(s1 instanceof Person);
+        System.out.println(s1 instanceof Object);
+
+        // getClass()
         //System.out.println(s1.getProgramOfStudy());
         //Person p1 = new Person("John", 20, ad);
         //Person p2 = new Person("Jane", 19, new Address(5678, "Guy", "H3", "Montreal"));

@@ -3,9 +3,10 @@ package comp249_pp;
 public class Person {
 
     // Data attributes
-    private String name;
+    protected String name;
     private int age;
     private Address address;
+    public static int number;
 
     // Constructors
     public Person(String name, int age, Address address) {
@@ -78,6 +79,14 @@ public class Person {
         //} else {
         return "This is " + this.name + " whose age is " + this.age + " living in " + this.address;
         //}
+    }
+
+    private void f() {
+        System.out.println("From Person class.");
+    }
+
+    public void g() {
+        f();
     }
 
 }

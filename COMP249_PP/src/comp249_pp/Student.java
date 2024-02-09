@@ -11,6 +11,7 @@ public class Student extends Person {
         super(name, age, address);
         this.programOfStudy = programOfStudy;
         this.gpa = gpa;
+        this.name = "ggg";
     }
 
     // Setters
@@ -29,6 +30,16 @@ public class Student extends Person {
 
     public double getGPA() {
         return this.gpa;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", enrolled in " + this.programOfStudy + " with a GPA of " + this.gpa;
+    }
+
+    @Override
+    public void g() {
+        super.g();
     }
 
 }
