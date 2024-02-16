@@ -1,4 +1,4 @@
-package comp249_pp;
+package previousclasses;
 
 public class Address {
 

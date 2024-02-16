@@ -1,4 +1,6 @@
-package comp249_pp;
+package previousclasses;
+
+import previousclasses.Address;
 
 public class Person {
 

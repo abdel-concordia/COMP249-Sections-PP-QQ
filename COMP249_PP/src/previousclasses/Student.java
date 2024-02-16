@@ -1,4 +1,7 @@
-package comp249_pp;
+package previousclasses;
+
+import previousclasses.Person;
+import previousclasses.Address;
 
 public class Student extends Person {
 
