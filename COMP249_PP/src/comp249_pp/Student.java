@@ -14,6 +14,11 @@ public class Student extends Person {
         this.name = "ggg";
     }
 
+    public Student(Student otherStudent) {
+        this(otherStudent.name, otherStudent.age, new Address(otherStudent.address),
+                otherStudent.programOfStudy, otherStudent.gpa);
+    }
+
     // Setters
     public void setProgramOfStudy(String pos) {
         this.programOfStudy = pos;
@@ -57,11 +62,16 @@ public class Student extends Person {
         // Everything looks good, please compare
         Student otherStudent = (Student) otherObject;
 
-        if (this.gpa == otherStudent.gpa) {
+        if (this.gpa == otherStudent.gpa && programOfStudy.equals(otherStudent.programOfStudy)) {
             return true;
         } else {
             return false;
         }
+    }
+
+    @Override
+    protected Person clone() {
+        return new Student(this);
     }
 
 }

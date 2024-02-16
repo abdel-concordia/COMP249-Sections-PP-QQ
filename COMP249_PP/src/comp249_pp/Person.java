@@ -4,9 +4,8 @@ public class Person {
 
     // Data attributes
     protected String name;
-    private int age;
-    private Address address;
-    public static int number;
+    protected int age;
+    protected Address address;
 
     // Constructors
     public Person(String name, int age, Address address) {
@@ -101,5 +100,10 @@ public class Person {
         } else {
             return false;
         }
+    }
+
+    @Override
+    protected Person clone() {
+        return new Person(this);
     }
 }

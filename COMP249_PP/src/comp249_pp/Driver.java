@@ -1,22 +1,43 @@
 package comp249_pp;
 
-public class Driver extends Object {
+import java.util.Scanner;
+
+public class Driver {
 
     public static void main(String[] args) {
 
         Address ad1 = new Address(1234, "Ste-Catherine", "H3", "Montreal");
         Address ad2 = new Address(1234, "Ste-Catherine", "H3", "Montreal");
 
-        Person s1 = new Student("John", 20, ad1, "CS", 3.7);
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        Object s1;
+        if (number % 2 == 0) {
+            s1 = new Student("Jane", 19, ad1, "Biology", 3.7);
+        } else {
+            s1 = new Person("John", 18, ad1);
+        }
+
         Student s2 = new Student("John", 20, ad2, "CS", 3.7);
+
+        Person s3 = new Person(s1);
+
+        Person s4 = s1.clone();
+
+        if (s1.equals(s2)) {
+            System.out.println("Equal.");
+        } else {
+            System.out.println("Not equal");
+        }
 
         Person p1 = new Person("John", 20, ad1);
 
         Person[] myStudents = new Student[5];
 
-        myStudents[0] = s1;
-        myStudents[1] = p1;
-
+        //myStudents[0].f();
+        //myStudents[0] = s1;
+        //myStudents[1] = p1;
         s1.f();
 
         s2.f();
