@@ -3,4 +3,4 @@ Here, you will find all commits of the code discussed in class during COMP 249, 
 
 IMPORTANT: if you find errors or bugs, please let me know so I can fix them. Thank you,
 
-Enjoy your semester!
+Enjoy your semester! 
