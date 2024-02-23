@@ -1,4 +1,4 @@
-package comp249_pp_qq;
+package previousclasses;
 
 public abstract class Shape {
 

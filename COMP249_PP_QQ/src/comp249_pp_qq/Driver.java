@@ -1,31 +1,39 @@
 package comp249_pp_qq;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Driver {
 
     public static void main(String[] args) {
 
-        Shape t1 = new Triangle("TR1", 2, 4, 6);
+        Scanner sc = new Scanner(System.in);
 
-        Rectangle r1 = new Rectangle("R1", 7, 3);
+        int n = 5;
+        int y = 0;
 
-        final int ARRAY_SIZE = 5;
+        try {
+            System.out.print("Please input a number: ");
+            int x = sc.nextInt(); // InputMismatch
 
-        Shape[] myShapes = new Shape[ARRAY_SIZE];
+            calculate(x); // Division by Zero
 
-        myShapes[0] = t1;
-        myShapes[1] = r1;
-        myShapes[2] = new Circle("C1", 3.2);
-
-        //for (int i = 0; i < ARRAY_SIZE; i++) {
-        //    System.out.println(myShapes[i].calculatePerimeter());
-        //}
-        // Enhanced loop
-        for (Shape shape : myShapes) {
-            if (shape != null) {
-                //shape.f();
-                System.out.println(shape.calculatePerimeter());
-            }
+        } catch (Exception ime) {
+            System.out.println("There was an unknown error.");
+        } finally {
+            System.out.println("This is finally block.");
         }
 
+        System.out.print("The result is: ");
+        System.out.println(y);
+
     }
+
+    public static int calculate(int number) throws ArithmeticException {
+
+        int y = 3 / (number - 5); // Division by Zero
+
+        return y;
+    }
+
 }
