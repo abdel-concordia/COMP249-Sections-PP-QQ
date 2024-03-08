@@ -1,4 +1,6 @@
-package comp249_pp_qq;
+package previousclasses;
+
+import previousclasses.MyException;
 
 public class Course {
 
